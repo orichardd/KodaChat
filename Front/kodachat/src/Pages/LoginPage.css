@@ -1,0 +1,105 @@
+.MainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-color: white;
+}
+
+.mainLoginContent {
+    width: 85vw;
+    max-width: 600px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #E8E8E8;
+    box-shadow: inset 0px 4px 4px #9f9f9f88;
+    border-radius: 8px;
+}
+
+.loginTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 7px;
+    width: calc(100% - (var(--espaco-interno) * 2));
+    margin: var(--espaco-interno);
+    margin-bottom: 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    color: var(--cor-texto);
+}
+
+.UserCredentials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--espaco-interno);
+
+    background-color: white;
+    border-radius: 7px;
+
+    width: calc(100% - (var(--espaco-interno) * 2));
+    margin: var(--espaco-interno);
+    padding: var(--espaco-interno);
+    box-sizing: border-box;
+}
+.inputContainer {
+    width: calc(100% - 4px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--espaco-interno);
+}
+
+.loginInput {
+    width: calc(100% - 10px);
+    outline: var(--cor-texto);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: var(--espaco-interno);
+}
+
+.loginInput:focus {
+    outline-width: 4px;
+}
+
+.loginButtons {
+    display: flex;
+    width: 100%;
+    gap: var(--espaco-interno);
+}
+
+.loginB {
+    flex: 1;
+    height: 3.5rem;
+    border-radius: 4px;
+    border: none;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.loginButton {
+    background-color: var(--cor-padrao);
+}
+
+.loginButton:hover {
+    background-color: #00A0E0;
+}
+
+.registerButton {
+    background-color: #4E4E4E;
+}
+
+.registerButton:hover {
+    background-color: #3A3A3A;
+}

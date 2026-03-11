@@ -1,0 +1,19 @@
+:root {
+  --cor-padrao: #1979F2;
+  --cor-texto: #333;
+
+  --espaco-interno: 6px;
+  --espaco-texto:10px;
+
+  --tamanho-header: 50px;
+
+  --footer-height: 70px;
+  --footer-contet: 55px;
+
+  color: var(--cor-texto);
+  font-family: 'inter', sans-serif;
+  font-size: 15px;
+}
+.button:hover {
+  cursor: pointer;
+}

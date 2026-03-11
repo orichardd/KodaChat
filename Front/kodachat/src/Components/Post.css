@@ -1,0 +1,142 @@
+
+.post{
+    width: 85vw;
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: none;
+
+    background-color: #E8E8E8;
+
+    box-shadow: inset 0px 4px 4px #9f9f9f88;
+
+    border-radius: 8px;
+}
+.postContainer{
+
+    width: calc(100% - (var(--espaco-interno) * 2));
+    margin: var(--espaco-interno);
+}
+.postHeader{
+    height: var(--tamanho-header);
+
+    background-color: white;
+
+    border-radius: 6px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    font-size: 0.8rem;
+    font-weight: 200;
+    img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+
+        margin-right: var(--espaco-interno);;
+    }
+}
+.postContent, .postHeader{
+        box-shadow: 0px 2px 4px #9f9f9f88;
+
+}
+.postContent{
+    margin-top: var(--espaco-interno);
+    padding: var(--espaco-texto);
+
+    border-radius: 6px;
+    background-color: white;
+}
+.postTitle, .authorName{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.separateLine{
+    height: 1px;
+    background-color: #D9D9D9;
+
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.postText{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.postAuthor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: none;
+}
+
+.bottomContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: var(--espaco-interno);
+    margin-top: var(--espaco-interno);
+
+    background-color: white;
+
+    border-radius: 6px;
+
+    height: var(calc(var(--tamanho-header) - 5px));
+}
+.bottomButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 27px;
+    width: auto;
+    min-width: 27px;
+    border-radius: 4px;
+    padding: 5px;
+
+    color: var(--cor-padrao);
+    font-size: 1.2rem;
+
+    gap: 5px;
+
+    box-shadow: 0px 0px 5px 1px #7474743b;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    h3{
+    margin: 0;
+    }
+
+    img{
+        width: 15px;
+        height: fit-content;
+
+        max-width: 30px;
+        max-height: fit-content;
+    }
+
+}
+.bottomButton:active {
+    background-color: var(--cor-padrao);
+    color: white;
+}
+.bottomContainerMain{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.postTimestamp{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}

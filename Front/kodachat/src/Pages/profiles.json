@@ -1,0 +1,102 @@
+[
+  {
+    "author": "Ellie Kirk",
+    "title": "Holiday",
+    "content": "Let's go away for a while, you and I, to a strange and distant land where we don't understand anything but it feels right. No schedules, no expectations, just quiet streets, unfamiliar signs, and the strange comfort of being somewhere completely new.",
+    "timestamp": "2024-06-01 12:00:00",
+    "likes": 3,
+    "dislikes": 0,
+    "comments": 0,
+    "profileImage": "1.webp"
+  },
+  {
+    "author": "Marcus Lee",
+    "title": "Wanderlust",
+    "content": "Sometimes the best thing to do is disappear for a moment and let the world spin without you. Step outside the routine, take a train with no clear destination, and remember that life is much bigger than your daily schedule.",
+    "timestamp": "2024-06-02 09:14:22",
+    "likes": 5,
+    "dislikes": 1,
+    "comments": 2,
+    "profileImage": "4.webp"
+  },
+  {
+    "author": "Sofia Ramirez",
+    "title": "Postcards",
+    "content": "We wrote letters in free verse to everyone back home, hoping they would understand the silence between the lines. Every postcard carried a piece of the places we visited — a street, a café, a sunset that felt impossible to describe.",
+    "timestamp": "2024-06-02 14:52:10",
+    "likes": 7,
+    "dislikes": 0,
+    "comments": 1,
+    "profileImage": "8.webp"
+  },
+  {
+    "author": "Daniel Cho",
+    "title": "Road Trip",
+    "content": "On the road again with nothing but music, stories, and the feeling that we might never return. The highway stretched endlessly ahead, and every mile felt like a quiet promise that something unexpected was waiting around the next turn.",
+    "timestamp": "2024-06-03 08:03:44",
+    "likes": 2,
+    "dislikes": 0,
+    "comments": 0,
+    "profileImage": "12.webp"
+  },
+  {
+    "author": "Lena Müller",
+    "title": "Far Away",
+    "content": "Far away from routines and expectations, we finally found a place where time moved slower. Morning coffee lasted hours, conversations drifted without purpose, and sunsets became the only schedule we cared about.",
+    "timestamp": "2024-06-03 18:27:05",
+    "likes": 6,
+    "dislikes": 0,
+    "comments": 3,
+    "profileImage": "6.webp"
+  },
+  {
+    "author": "Andre Costa",
+    "title": "Heartbeat",
+    "content": "In a heartbeat we decided to leave everything behind and chase the horizon. No big plan, no perfect timing — just the feeling that if we didn't go now, we might never go at all.",
+    "timestamp": "2024-06-04 10:11:31",
+    "likes": 4,
+    "dislikes": 0,
+    "comments": 1,
+    "profileImage": "3.webp"
+  },
+  {
+    "author": "Hannah Brooks",
+    "title": "Free Verse",
+    "content": "Our postcards had no rhyme or structure, only fragments of the places we had seen. A quiet park bench, a rainy afternoon, the sound of distant traffic mixing with laughter from strangers.",
+    "timestamp": "2024-06-04 16:40:18",
+    "likes": 9,
+    "dislikes": 1,
+    "comments": 4,
+    "profileImage": "11.webp"
+  },
+  {
+    "author": "Lucas Pereira",
+    "title": "Endless Road",
+    "content": "The road stretched endlessly in front of us and for the first time that felt comforting. No rush, no final destination — just the steady rhythm of wheels on asphalt and the freedom of moving forward.",
+    "timestamp": "2024-06-05 07:55:09",
+    "likes": 3,
+    "dislikes": 0,
+    "comments": 0,
+    "profileImage": "14.webp"
+  },
+  {
+    "author": "Aiko Tanaka",
+    "title": "Silent Town",
+    "content": "A town where no one spoke our language but everyone smiled as if we belonged. Sometimes kindness doesn't need translation — it shows up in gestures, in shared meals, and in quiet understanding.",
+    "timestamp": "2024-06-05 13:22:47",
+    "likes": 8,
+    "dislikes": 0,
+    "comments": 2,
+    "profileImage": "9.webp"
+  },
+  {
+    "author": "ye ",
+    "title": "Stay Awhile",
+    "content": "Maybe we should stay a little longer, just until the feeling of freedom fades. Or maybe it never will, and we'll keep chasing that quiet excitement of waking up somewhere new.",
+    "timestamp": "2024-06-06 20:05:33",
+    "likes": 5,
+    "dislikes": 0,
+    "comments": 1,
+    "profileImage": "2.webp"
+  }
+]

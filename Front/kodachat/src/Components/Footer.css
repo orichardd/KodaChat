@@ -1,0 +1,220 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: var(--footer-height);
+    background-color: #fff;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0px -4px 10px #9f9f9f88;
+
+
+    .footerProfilePicture {
+        height: var(--footer-contet);
+        width: fit-content;
+        border-radius: 50%;
+
+    box-shadow: 0px 0px 5px 1px #7474743b;
+    }
+}
+
+.footerContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    font-size: 0.8rem;
+    font-weight: 400;
+
+    margin: 10px;
+    width: calc(100% - 20px);
+}
+
+.onlineP {
+    color: var(--cor-padrao);
+    animation: piscar 2s infinite;
+}
+
+@keyframes piscar {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.footerUserInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.footerUserDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+}
+
+.footerUserName {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.footerButton {
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--footer-contet);
+    width: var(--footer-contet);
+    min-width: 27px;
+    border-radius: 8px;
+    
+    box-shadow: 0px 0px 5px 1px #7474743b;
+
+    padding: 0px;
+
+    background-color: white;
+    color: var(--cor-padrao);
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+.footerButton:active {
+    background-color: var(--cor-padrao);
+    color: white;
+}
+
+.createPostCheckBox {
+    background-image: url("/plus.png");
+    background-size: 60% 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menuCheckBox {
+    background-image: url("/3lines.png");
+    background-size: 60% 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footerButton>img {
+    height: 60%;
+    width: 60%;
+}
+
+.footerButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.screenCover {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-color: #68686853;
+
+    position: fixed;
+    top: 0;
+
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.createPost {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: fixed;
+    bottom: var(--footer-height);
+
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.createPostContainer {
+    width: 85vw;
+    max-width: 600px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: none;
+
+    background-color: #E8E8E8;
+
+    box-shadow: inset 0px 4px 4px #9f9f9f88;
+
+    border-radius: 8px;
+}
+
+.createPostContainerContent {
+    width: calc(100% - (var(--espaco-interno) * 2));
+    margin: var(--espaco-interno);
+}
+
+.postInput {
+    width: calc(100% - 10px);
+    outline: var(--cor-texto);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: var(--espaco-interno);
+}
+
+.postInput:focus {
+    outline-width: 4px;
+}
+
+.postInputContent{
+    height: 200px;
+    
+}
+
+.submitPostButton{
+    background-color: var(--cor-padrao);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    width: 100%;
+}
