@@ -17,3 +17,9 @@
 .button:hover {
   cursor: pointer;
 }
+h4{
+  margin: 0;
+}
+ul{
+  list-style-type: square;
+}

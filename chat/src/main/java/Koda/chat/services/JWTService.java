@@ -13,6 +13,8 @@ import java.nio.charset.StandardCharsets;
 @Service
 public class JWTService {
 
+
+
     private SecretKey getSignKey() {
         return Keys.hmacShaKeyFor(
                 "abcdefghijklmnopqrstuvwxyz123456".getBytes(StandardCharsets.UTF_8)

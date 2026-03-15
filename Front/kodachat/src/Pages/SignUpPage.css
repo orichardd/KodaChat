@@ -1,0 +1,63 @@
+
+.SMainContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.pictureChoiceContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: var(--cor-texto);
+    }
+}
+.pictureChoiceUl{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0;
+}
+.profilePictureChoice {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profilePictureChoice label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+.profilePictureChoice input[type="radio"] {
+  display: none;
+}
+
+.profilePictureChoice img {
+  width: 80px;
+  height: 80px;
+  border-radius: 20%;
+  object-fit: cover;
+  border: 2.5px solid transparent;
+  transition: border-color 0.18s, transform 0.18s, box-shadow 0.18s;
+}
+
+.profilePictureChoice label:hover img {
+  transform: scale(1.05);
+}
+
+.profilePictureChoice input[type="radio"]:checked + img {
+  border-color: var(--cor-padrao);
+}

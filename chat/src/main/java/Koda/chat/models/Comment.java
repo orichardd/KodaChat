@@ -52,4 +52,8 @@ public class Comment {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         return date.format(formatter);
     }
+
+    public Long getId() {
+        return id;
+    }
 }

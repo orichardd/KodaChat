@@ -1,8 +1,10 @@
 package Koda.chat.controllers;
 
 import Koda.chat.DTOs.CommentDTO;
+import Koda.chat.DTOs.PostDTO;
 import Koda.chat.DTOs.create.CreateCommentDTO;
 import Koda.chat.services.CommentService;
+import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -23,7 +25,14 @@ public class CommentController {
     }
 
     @GetMapping("/{postId}")
-    public List<CommentDTO> GetAllCommentsByPost(@PathVariable Long postId) {
-        return commentService.GetAllCommentsByPost(postId);
+    public ResponseEntity<?> GetAllCommentsByPost(@PathVariable Long postId) {
+        List<CommentDTO> dto = commentService.GetAllCommentsByPost(postId);
+        return ResponseEntity.status(201).body(dto);
+    }
+
+    @GetMapping("/getcount/{postId}")
+    public ResponseEntity<?> GetCommentCountById(@PathVariable Long postId){
+        Integer commentsCount = commentService.GetCommentsCountByPostId(postId);
+        return ResponseEntity.status(201).body(commentsCount);
     }
 }

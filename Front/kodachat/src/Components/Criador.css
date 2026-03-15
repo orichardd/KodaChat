@@ -1,0 +1,32 @@
+
+.criador{
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-interno);
+
+    img{
+        height: 100px;
+    }
+}
+.creatorTitle{
+    font-size: 1.5rem;
+}
+.criadorHeader{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    padding: var(--espaco-interno);
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+            box-shadow: 0px 3px 7px #9f9f9f88;
+
+
+}
+.trabalho{
+    
+    padding: var(--espaco-interno);
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    box-shadow: 0px 3px 7px #9f9f9f88;
+}

@@ -62,9 +62,14 @@ public class CommentService {
                         c -> new CommentDTO(
                                 c.getContent(),
                                 c.getDate(),
-                                c.getUser().getUsername()
+                                c.getUser().getUsername(),
+                                c.getId()
                         )
                 )
                 .toList();
+    }
+
+    public Integer GetCommentsCountByPostId(Long postId) {
+        return commentRepository.countByPostId(postId);
     }
 }

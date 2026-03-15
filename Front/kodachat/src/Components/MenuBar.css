@@ -1,0 +1,21 @@
+.sideMenu{
+    width: 50vw;
+    height: calc(100vh - var(--footer-height));
+    background-color: white;
+
+    position: fixed;
+    bottom: var(--footer-height);
+    left: 50vw;
+
+    transform: translatex(0%);
+    transition: transform 0.3s ease;
+}
+.sideMenuContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

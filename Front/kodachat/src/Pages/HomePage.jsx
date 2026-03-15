@@ -1,31 +1,47 @@
 import "./HomePage.css";
 import { Post } from "../Components/Post.jsx";
-import{ Footer } from "../Components/Footer.jsx";
-import profiles from "./profiles.json";
+import { Footer } from "../Components/Footer.jsx";
+import { useState, useEffect } from "react";
+import api from "../api.js";
+export function HomePage() {
 
-export function HomePage(){
+    const [posts, setPosts] = useState([]);
 
-    function getPosts(){
-        return profiles.map((post, index) =>
+    async function getPosts(){
+        try{
+            await api.get("/posts/getall").then((response) => {
+                setPosts(response.data);
+            });
+        } catch (error) {
+            alert("Erro ao buscar posts: " + error.response.data.message);
+        }
+    }
+    
+
+    useEffect(() => {
+        getPosts();
+    }, []);
+
+    function transformPosts() {
+        return posts.map((post) =>
             <Post
-                key={index}
-                author={post.author}
+                key={post.id}
+                author={post.username}
                 title={post.title}
                 content={post.content}
-                timestamp={post.timestamp}
-                likes={post.likes}
-                dislikes={post.dislikes}
-                comments={post.comments}
-                profileImage={"/profilePictures/" + post.profileImage}
+                timestamp={post.date}
+                likes="0"
+                dislikes="0"
+                profileImage={"/profilePictures/" + post.picture_num + ".jpg"}
+                id={post.id}
             />
         )
     }
 
-    return(
+    return (
         <div className="mainContentHomePage">
-            {getPosts()}
-                
-            <Footer userPicture={"/profilePictures/" + profiles[0].profileImage} userName={profiles[0]?.author} />
+            {transformPosts()}
+            <Footer />
 
         </div>
     )

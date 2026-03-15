@@ -13,6 +13,8 @@ public record PostDTO(
         @NotBlank
         String date,
         @NotBlank
-        String username
+        String username,
+        @NotBlank
+        Integer picture_num
 ) {
 }

@@ -1,5 +1,6 @@
 package Koda.chat.services;
 
+import Koda.chat.DTOs.SimpleUserDTO;
 import Koda.chat.DTOs.UserDTO;
 import Koda.chat.DTOs.create.CreateUserDTO;
 import Koda.chat.models.User;
@@ -7,6 +8,7 @@ import Koda.chat.repositories.UserRepository;
 import Koda.chat.security.SecurityConfig;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -47,5 +49,26 @@ public class UserService {
         }
 
         return user;
+    }
+
+    public SimpleUserDTO GetUser(String username) {
+        User user = userRepository.findUserByUsername(username);
+        if(user == null){
+            throw new IllegalArgumentException("Usuario nao encontrado");
+        }
+        return new SimpleUserDTO(
+                user.getUsername(),
+                user.getPicture_num(),
+                user.getDate().toString()
+        );
+    }
+
+    public SimpleUserDTO GetUserByUsername(String username) {
+        User user = userRepository.getUserByUsername(username);
+        return new SimpleUserDTO(
+                user.getUsername(),
+                user.getPicture_num(),
+                user.getDate().toString()
+        );
     }
 }

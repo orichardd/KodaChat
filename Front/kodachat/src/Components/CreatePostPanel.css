@@ -1,0 +1,61 @@
+.createPost {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: fixed;
+    bottom: var(--footer-height);
+
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.createPostContainer {
+    width: 85vw;
+    max-width: 600px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #E8E8E8;
+    box-shadow: inset 0px 4px 4px #9f9f9f88;
+    border-radius: 8px;
+}
+
+.createPostContainerContent {
+    width: calc(100% - (var(--espaco-interno) * 2));
+    margin: var(--espaco-interno);
+}
+
+.postInput {
+    width: calc(100% - 10px);
+    outline: var(--cor-texto);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    padding: var(--espaco-interno);
+}
+
+.postInput:focus {
+    outline-width: 4px;
+}
+
+.postInputContent {
+    height: 200px;
+    resize: none;
+}
+
+.submitPostButton {
+    background-color: var(--cor-padrao);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}

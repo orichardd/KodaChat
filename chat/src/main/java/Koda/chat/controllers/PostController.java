@@ -1,6 +1,7 @@
 package Koda.chat.controllers;
 
 import Koda.chat.DTOs.PostDTO;
+import Koda.chat.DTOs.UserDTO;
 import Koda.chat.DTOs.create.CreatePostDTO;
 import Koda.chat.services.PostService;
 import jakarta.validation.Valid;
@@ -26,8 +27,21 @@ public class PostController {
     }
 
     @GetMapping("/getall")
-    public List<PostDTO> GetAllPosts(){
-        return postService.GetAllPosts();
+    public ResponseEntity<?> GetAllPosts(){
+        List<PostDTO> list = postService.GetAllPosts();
+        return ResponseEntity.status(201).body(list);
+    }
+
+    @GetMapping("/getposts/{username}")
+    public ResponseEntity<?> GetPostByUser(@PathVariable String username ){
+        List<PostDTO> posts = postService.GetPostsByUser(username);
+        return ResponseEntity.status(201).body(posts);
+    }
+
+    @GetMapping("/{postId}")
+    public ResponseEntity<?> GetPostById(@PathVariable Long postId){
+        PostDTO dto = postService.GetPostsById(postId);
+        return ResponseEntity.status(201).body(dto);
     }
 
 }

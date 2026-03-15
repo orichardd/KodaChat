@@ -29,7 +29,7 @@ public class SecurityConfig {
                 .sessionManagement(s -> s.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/users/signup", "/auth/login", "/posts/getall", "/comments/{postId}").permitAll()
+                        .requestMatchers("/users/signup", "/auth/login").permitAll()
                         .anyRequest().authenticated()
                 )
                 .httpBasic(Customizer.withDefaults())
@@ -37,5 +37,6 @@ public class SecurityConfig {
 
         return http.build();
     }
+
 
 }

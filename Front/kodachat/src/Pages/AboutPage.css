@@ -1,0 +1,50 @@
+.aboutScreen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding-bottom: var(--footer-height);
+}
+.aboutPageContainer{
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--espaco-interno);
+
+
+    background-color: #E8E8E8;
+
+    box-shadow: inset 0px 4px 4px #9f9f9f88;
+
+    border-radius: 8px;
+
+    padding: var(--espaco-interno);
+}
+
+
+.aboutContent{
+    width: calc(100% - var(--espaco-interno) * 2);
+    height: auto;
+    padding: var(--espaco-interno);
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.criadores{
+    width: calc(100% - var(--espaco-interno) * 2) ;
+    gap: var(--espaco-interno);
+    margin-bottom: var(--espaco-interno);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}

@@ -2,6 +2,8 @@ package Koda.chat.models;
 
 import jakarta.persistence.*;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Table(name = "users")
 public class User {
@@ -19,10 +21,14 @@ public class User {
     @Column(nullable = false)
     private Integer picture_num;
 
+    @Column
+    private LocalDateTime date;
+
     public User(String username, String password, Integer picture_num) {
         this.username = username;
         this.password = password;
         this.picture_num = picture_num;
+        this.date = LocalDateTime.now();
     }
 
     public User() {
@@ -42,5 +48,9 @@ public class User {
 
     public Long getId() {
         return id;
+    }
+
+    public LocalDateTime getDate() {
+        return date;
     }
 }
