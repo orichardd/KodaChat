@@ -40,8 +40,6 @@ export function HomePage() {
                 title={post.title}
                 content={post.content}
                 timestamp={post.date}
-                likes="0"
-                dislikes="0"
                 profileImage={"/profilePictures/" + post.picture_num + ".png"}
                 id={post.id}
             />

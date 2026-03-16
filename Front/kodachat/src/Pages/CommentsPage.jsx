@@ -106,7 +106,7 @@ export function CommentsPage() {
                                 timestamp={comment.date}
                                 likes={"0"}
                                 dislikes={"0"}
-                                id={comment.id}
+                                id={comment.comment_id}
                             />
                         ))}
                     </div>

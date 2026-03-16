@@ -32,7 +32,6 @@
     flex-direction: column;
     box-sizing: border-box;
     gap: var(--espaco-interno);
-
 }
 .commentInputContent {
     height: 100px;
@@ -46,4 +45,9 @@
     padding: var(--espaco-interno);
 
     outline: var(--cor-texto);
+}
+.commentsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-interno);
 }
