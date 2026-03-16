@@ -7,7 +7,8 @@ export function AboutPage() {
         <div className="aboutScreen">
             <div className="aboutPageContainer">
 
-                <div className="aboutContent">
+                <div className="aboutContent aboutContentTop">
+                    <img src="/logo.png" alt="" className="logoImage" />
                     <h3>
                         Sobre Nós
                     </h3>
@@ -17,8 +18,8 @@ export function AboutPage() {
                         Criado por:
                     </h4>
                     <div className="criadores">
-                        <Criador picture="/profilePictures/cristo_nii.jpg" name="cristo_nii" work={["BackEnd Java Spring", "Segurança JWT", "API", "Banco de Dados Postgres", "FrontEnd React", "UI/UX"]} />
-                        <Criador picture="/profilePictures/pokado.jpg" name="poKado" work={["Servidor", "Hospedagem"]} />
+                        <Criador picture="/profilePictures/271.png" name="cristo_nii" work={["BackEnd Java Spring", "Segurança JWT", "API", "Banco de Dados Postgres", "FrontEnd React", "UI/UX"]} />
+                        <Criador picture="/profilePictures/667.png" name="poKado" work={["Servidor", "Hospedagem"]} />
 
 
                     </div>

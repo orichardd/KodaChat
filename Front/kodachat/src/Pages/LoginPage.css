@@ -20,6 +20,12 @@
     background-color: #E8E8E8;
     box-shadow: inset 0px 4px 4px #9f9f9f88;
     border-radius: 8px;
+
+    img{
+        width: 50px;
+        height: 50px;
+        margin-right: var(--espaco-interno);
+    }
 }
 
 .loginTitle {
@@ -35,6 +41,7 @@
     font-size: 1.2rem;
     color: var(--cor-texto);
 }
+
 
 .UserCredentials {
     display: flex;
@@ -108,4 +115,10 @@
 
 .registerButton:hover {
     background-color: #3A3A3A;
+}
+
+.loginText {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--cor-texto);
 }

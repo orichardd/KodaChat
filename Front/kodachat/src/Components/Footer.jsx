@@ -27,7 +27,7 @@ export function Footer() {
         setOpenPanel(openPanel === panel ? null : panel);
     }
 
-    const profilePicture = "/profilePictures/" + userProfile.picture_num + ".jpg"
+    const profilePicture = "/profilePictures/" + userProfile.picture_num + ".png"
 
     return (
         <>

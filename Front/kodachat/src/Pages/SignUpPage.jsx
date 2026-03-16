@@ -9,10 +9,10 @@ export function SignUpPage() {
     const [selectedPicture, setSelectedPicture] = useState(null);
     const navigate = useNavigate();
 
-    const profilePictures = [["/profilePictures/1.webp", 1], ["/profilePictures/2.webp", 2], ["/profilePictures/3.webp", 3], ["/profilePictures/4.webp", 4], ["/profilePictures/5.webp", 5], ["/profilePictures/6.webp", 6], ["/profilePictures/7.webp", 7], ["/profilePictures/8.webp", 8], ["/profilePictures/9.webp", 9], ["/profilePictures/10.webp", 10], ["/profilePictures/11.webp", 11], ["/profilePictures/12.webp", 12], ["/profilePictures/13.webp", 13], ["/profilePictures/14.webp", 14], ["/profilePictures/15.jpg", 15], ["/profilePictures/16.jpg", 16], ["/profilePictures/17.jpg", 17], ["/profilePictures/18.jpg", 18], ["/profilePictures/19.jpg", 19], ["/profilePictures/20.jpg", 20], ["/profilePictures/21.jpg", 21], ["/profilePictures/22.jpg", 22]];
+    const profilePictures = [["/profilePictures/1.png", 1], ["/profilePictures/2.png", 2], ["/profilePictures/3.png", 3], ["/profilePictures/4.png", 4], ["/profilePictures/5.png", 5], ["/profilePictures/6.png", 6], ["/profilePictures/7.png", 7], ["/profilePictures/8.png", 8], ["/profilePictures/9.png", 9], ["/profilePictures/10.png", 10], ["/profilePictures/11.png", 11], ["/profilePictures/12.png", 12], ["/profilePictures/13.png", 13], ["/profilePictures/14.png", 14], ["/profilePictures/15.png", 15], ["/profilePictures/16.png", 16], ["/profilePictures/17.png", 17], ["/profilePictures/18.png", 18], ["/profilePictures/19.png", 19], ["/profilePictures/20.png", 20], ["/profilePictures/21.png", 21], ["/profilePictures/22.png", 22]];
 
     function validateUsername(username) {
-        const regex = /^[a-zA-Z0-9_\s]+$/;
+        const regex = /^[a-z0-9_\s]+$/;
         return regex.test(username);
     }
 
@@ -55,7 +55,8 @@ export function SignUpPage() {
             <div className="SMainContent">
                 <div className="mainLoginContent">
                     <div className="loginTitle">
-                        <h3>Cadastrar-se</h3>
+                        <img src="/logo.png" alt="" />
+                        <h3>KodaChat</h3>
                     </div>
                     <div className="UserCredentials">
                         <div className='inputContainer'>

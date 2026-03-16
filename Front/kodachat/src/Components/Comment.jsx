@@ -25,11 +25,11 @@ export function Comment({ author, content, timestamp, likes, dislikes, id }) {
 
             <div className="postContainer">           
 
-                <div className="postHeader">
+                <div className="postHeader" style={author === "cristo_nii" ? { backgroundColor: "#76009b", color: "white" } : {}} >
                     <div className="postAuthor">
 
                         <Link to={"/perfil/" + author} className="authorProfileLink">
-                            <img src={"/profilePictures/" + userProfile.picture_num + ".jpg"} alt="Avatar" />
+                            <img src={"/profilePictures/" + userProfile.picture_num + ".png"} alt="Avatar" />
                         </Link>
                         <h2 className="authorName">{author}</h2>
                     </div>

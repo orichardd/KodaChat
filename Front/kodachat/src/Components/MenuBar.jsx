@@ -15,7 +15,7 @@
             <div className="sideMenuContent">
                 <MenuElements image="/home.png" name="Home" route="/" />
                 <MenuElements image="/profile.png" name="Profile" route={"/perfil/" + localStorage.getItem("username")} />
-                <MenuElements image="/about.png" name="Sobre" route="/sobre" />
+                <MenuElements image="/logo.png" name="Sobre" route="/sobre" />
                 <MenuElements image="/exit.png" name="Logout" onClick={logout} route="/login" />
             </div>
         </div>)

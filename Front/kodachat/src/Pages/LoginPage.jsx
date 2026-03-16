@@ -11,7 +11,7 @@ export function LoginPage() {
     const navigate = useNavigate();
 
     function validateUsername(username) {
-        const regex = /^[a-zA-Z0-9_\s]+$/;
+        const regex = /^[a-z0-9_\s]+$/;
         return regex.test(username);
     }
 
@@ -45,7 +45,8 @@ export function LoginPage() {
         <div className="MainContent">
             <div className="mainLoginContent">
                 <div className="loginTitle">
-                    <h3>Login</h3>
+                    <img src="/logo.png" alt="" />
+                    <h3 className='loginText'>KodaChat</h3>
                 </div>
                 <div className="UserCredentials">
                     <div className='inputContainer'>

@@ -24,7 +24,7 @@ export function Post({ author, title, content, timestamp, likes, dislikes, profi
         <div className="post">
 
             <div className="postContainer">
-                <div className="postHeader">
+                <div className="postHeader" style={author === "cristo_nii" ? { backgroundColor: "#76009b", color: "white" } : {}}>
                     <div className="postAuthor">
 
                         <Link to={"/perfil/" + author} className="authorProfileLink">
